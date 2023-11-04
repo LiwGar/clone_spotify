@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         <meta name='description' content='Generate by create next app'/>
         <link rel='icon' href='/'/>
       </Head>
-      <h1 className='bg-red'>Hola Mundo</h1>
+      <h1 className='bg-orange-300'>Holaaa Mundo</h1>
     </div>
   )
 }
