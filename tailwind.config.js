@@ -10,12 +10,12 @@ module.exports = {
     extend: {
       colors: {
         spotify: {
-          green: '#1db954',
+          green: '#1fdf64',
           greenlight:' #1ed760',
-          black: '#191414',
+          black: '#000000',
           white: '#ffffff',
-          gray: '#B3B3B3',
-          lightgray: '#282828',
+          gray: '#121212',
+          lightgray: '#1e1e1e',
         },
 
       },
