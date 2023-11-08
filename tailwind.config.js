@@ -14,6 +14,7 @@ module.exports = {
           greenlight:' #1ed760',
           black: '#000000',
           white: '#ffffff',
+          bone: '##919191',
           gray: '#121212',
           lightgray: '#1e1e1e',
         },

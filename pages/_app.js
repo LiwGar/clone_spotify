@@ -11,7 +11,7 @@ function MyApp({Component, pageProps}) {
           <meta name='description' content='Generate by create next app'/>
           <link rel='icon' href='/'/>
       </Head>
-      <div className='bg-spotify-black min-h-screen text-gray-300'>
+      <div className='bg-spotify-black min-h-screen text-gray-400'>
         <Header />
         <Sidebar />
         <main>
