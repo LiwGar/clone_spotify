@@ -2,22 +2,33 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GoHome } from "react-icons/go";
-import { RiSearchLine, RiListCheck } from "react-icons/ri";
+import { RiSearchLine, RiListCheck, RiCloseLine } from "react-icons/ri";
 import { TfiLayoutColumn4Alt } from "react-icons/tfi";
 import { HiPlus } from "react-icons/hi";
 import { FiArrowRight } from "react-icons/fi";
 
-const Sidebar = () => {
+
+const Sidebar = (props) => {
+
+    const {showSidebar, setShowSidebar} = props;
+
   return (
-    <div className="fixed w-[24%] h-full top-0 left-0 p-2" alt="sidebar">
+    <div className={`fixed w-[100%] h-full top-0 p-2 bg-spotify-black ${ showSidebar ? 'left-0' : '-left-full'} 
+        md:left-0 lg:left-0 md:w-[24%] lg:w-[34%] xl:w-[24%] transition-all duration-300`} alt="sidebar">
       <div className="bg-spotify-gray px-6 py-6 rounded-lg" alt="home">
-        <div>
-          <Image
-            width={80}
-            height={80}
-            src="https://www.edigitalagency.com.au/wp-content/uploads/Spotify-Logo-png-RGB-White.png"
-            alt="spotify_Logo"
-          />
+        <div className="flex justify-between">
+            <div>
+                <Image
+                    width={80}
+                    height={80}
+                    src="https://www.edigitalagency.com.au/wp-content/uploads/Spotify-Logo-png-RGB-White.png"
+                    alt="spotify_Logo"
+                />
+            </div>
+            <button className="flex items-center justify-end -mr-1 hover:text-white transition-colors md:hidden">
+                <RiCloseLine onClick={() => setShowSidebar(false)}
+                    className="w-7 h-7 cursor-pointer" />
+            </button>
         </div>
         <nav>
           <ul className="font-bold">
@@ -40,15 +51,12 @@ const Sidebar = () => {
           </ul>
         </nav>
       </div>
-      <div
-        className="bg-spotify-gray h-[67%] px-6 py-1 mt-2 font-bold rounded-lg"
-        alt="your_Libray"
-      >
-        <div className="flex space-x-[12%] mt-3 ">
+      <div className="bg-spotify-gray h-[67%] px-6 py-1 mt-2 font-bold rounded-lg"
+            alt="your_Libray">
+        <div className="flex space-x-[12%] mt-3 xl:space-x-[12%]">
           <Link
             href={"#yourlibrary"}
-            className="flex items-center gap-4 hover:text-white transition-colors"
-          >
+            className="flex w-full items-center gap-4 hover:text-white transition-colors">
             <TfiLayoutColumn4Alt className="w-5 h-5" /> Your Library
           </Link>
           <button>
@@ -61,7 +69,7 @@ const Sidebar = () => {
         <button className="bg-spotify-lightgray w-[25%] h-8 mt-6 -ml-2.5 rounded-2xl text-sm text-white  hover:bg-stone-800 transition-colors">
           Artists
         </button>
-        <div className="flex space-x-[60%] mt-4 ">
+        <div className="flex space-x-[67%] mt-4 md:space-x-[28%] xl:space-x-[60%]">
           <Link
             href={"#search-recents"}
             className="flex items-center gap-4 hover:text-white transition-colors"
@@ -70,18 +78,18 @@ const Sidebar = () => {
           </Link>
           <Link
             href={"#recents-list"}
-            className="flex items-center gap-4 text-sm font-normal hover:text-white transition-colors"
+            className="flex  items-center gap-4 text-sm font-normal hover:text-white transition-colors"
           >
             Recents <RiListCheck className="w-5 h-5" />
           </Link>
         </div>
-        <nav className="flex flex-col mt-3 -ml-3.5 ">
+        <nav className="flex flex-col mt-3 -ml-3.5 md:snap-y">
           <ul className="font-normal text-white">
             <li>
               <Link
                 href={"#abgt-list"}
-                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors"
-              >
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
+                snap-left">
                 <div className="w-12 h-12 rounded-full">
                   <Image
                     width={60}
@@ -100,8 +108,8 @@ const Sidebar = () => {
             <li>
               <Link
                 href={"#armada-list"}
-                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors"
-              >
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
+                snap-left">
                 <div className="w-12 h-12 rounded-full">
                   <Image
                     width={60}
@@ -120,8 +128,8 @@ const Sidebar = () => {
             <li>
               <Link
                 href={"#martingarrix-list"}
-                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors"
-              >
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
+                snap-left">
                 <div className="w-12 h-12 rounded-full">
                   <Image
                     width={60}
@@ -136,6 +144,24 @@ const Sidebar = () => {
                   <p className="text-sm text-gray-400">Artist</p>
                 </div>
               </Link>
+              {/* <Link
+                href={"#kygo-list"}
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
+                snap-left">
+                <div className="w-12 h-12 rounded-full">
+                  <Image
+                    width={60}
+                    height={60}
+                    src="https://pbs.twimg.com/profile_images/1602796997001580544/P45k0XxL_400x400.jpg"
+                    alt="martingarrix"
+                    className="rounded-full"
+                  />
+                </div>
+                <div>
+                  <span>Kygo</span>
+                  <p className="text-sm text-gray-400">Artist</p>
+                </div>
+              </Link> */}
             </li>
           </ul>
         </nav>
@@ -145,3 +171,6 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
+// time: 1:42:29
