@@ -11,7 +11,7 @@ const Header = (props) => {
     const {setShowSidebar} = props;
 
     return (
-        <header className="fixed top-0 left-0 md:ml-[24%] lg:ml-[34%] xl:ml-[24%] w-full md:w-[calc(100%-24.6%)] lg:w-[calc(100%-34.6%)] xl:w-[calc(100%-24.6%)] bg-spotify-gray flex justify-between items-center md:items-start lg:items-start mr-2 h-16 p-6">
+        <header className="fixed items-start flex justify-between z-100 top-0 left-0 mr-2 h-17 px-6 pt-6 pb-4 md:ml-[24%] lg:ml-[34%] xl:ml-[24%] w-full md:w-[calc(100%-24.6%)] lg:w-[calc(100%-34.6%)] xl:w-[calc(100%-24.6%)] bg-spotify-black bg-opacity-30  md:items-start lg:items-start xl:items-end">
             <div className="flex gap-2" alt='rows_Header'>
                 <button className="flex items-center justify-center w-8 h-8 hover:text-white transition-colors md:hidden">
                     <HiMenuAlt1 onClick={() => setShowSidebar(true)}
