@@ -66,7 +66,7 @@ const Sidebar = (props) => {
             <FiArrowRight className="w-6 h-6 -ml-5 hover:text-white transition-colors" />
           </button>
         </div>
-        <button className="bg-spotify-lightgray w-[25%] h-8 mt-6 -ml-2.5 rounded-2xl text-sm text-white  hover:bg-stone-800 transition-colors">
+        <button className="bg-spotify-lightgray w-[25%] h-8 mt-6 -ml-2.5 rounded-2xl text-sm text-white  hover:bg-spotify-bghover transition-colors">
           Artists
         </button>
         <div className="flex space-x-[67%] mt-4 md:space-x-[28%] xl:space-x-[60%]">
@@ -84,11 +84,11 @@ const Sidebar = (props) => {
           </Link>
         </div>
         <nav className="flex flex-col mt-3 -ml-3.5 md:snap-y">
-          <ul className="font-normal text-white">
+          <ul className="font-semibold text-white">
             <li>
               <Link
                 href={"#abgt-list"}
-                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-spotify-bghover hover:rounded  transition-colors
                 snap-left">
                 <div className="w-12 h-12 rounded-full">
                   <Image
@@ -108,7 +108,7 @@ const Sidebar = (props) => {
             <li>
               <Link
                 href={"#armada-list"}
-                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-spotify-bghover hover:rounded  transition-colors
                 snap-left">
                 <div className="w-12 h-12 rounded-full">
                   <Image
@@ -128,7 +128,7 @@ const Sidebar = (props) => {
             <li>
               <Link
                 href={"#martingarrix-list"}
-                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-spotify-bghover hover:rounded  transition-colors
                 snap-left">
                 <div className="w-12 h-12 rounded-full">
                   <Image

@@ -31,6 +31,7 @@ module.exports = {
           bone: '##919191',
           gray: '#121212',
           lightgray: '#1e1e1e',
+          bghover:'#262626',
         },
 
       },
