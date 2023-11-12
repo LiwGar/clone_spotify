@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Card_1 from "./Cards/Card_1";
 import Card_2 from "./Cards/Card_2";
-import Card_3 from "./Cards/Card_2";
-import Card_4 from "./Cards/Card_2";
+import Card_3 from "./Cards/Card_3";
+import Card_4 from "./Cards/Card_4";
 
 
 const ListAlbum = (props) => {
@@ -11,8 +11,8 @@ const ListAlbum = (props) => {
     const {title, albums } = props;
 
     return (
-        <div className="max-sm:pt-[18%] sm:pt-[10%] md:ml-[2%] md:w-[calc(100%-2%)] md:pt-[12%] 
-                lg:ml-[3%] lg:w-[calc(100%-3%)] lg:md:pt-[12%] xl:ml-[4%] xl:w-[calc(100%-4%)] xl:pt-[6%] lg:items-start">
+        <div className="max-sm:pt-[18%] sm:pt-[10%] md:ml-[0%] md:w-[calc(100%)] md:pt-[12%] 
+                lg:ml-[0%] lg:w-[calc(100%)] lg:md:pt-[12%] xl:ml-[0%] xl:w-[calc(100%)] xl:pt-[6%] lg:items-start">
             <div className="flex items-end justify-between px-6 py-1 mb-5" >
                 <Link
                     className="text-spotify-white text-2xl font-bold tracking-tighter hover:underline"

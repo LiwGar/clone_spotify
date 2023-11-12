@@ -8,7 +8,7 @@ import { RiPlayFill } from "react-icons/ri";
     return ( 
     <Link 
         href="/"  
-        className="bg-spotify-lightgray p-4 flex flex-col justify-center rounded-lg hover:bg-spotify-bghover transition-all group"
+        className="bg-spotify-lightgray p-3 pb-8 flex flex-col justify-center rounded-lg hover:bg-spotify-bghover transition-all group"
     >
         <div className="mb-4 relative max-sm:flex max-sm:items-center max-sm:justify-center sm:flex sm:justify-center md:flex md:items-center md:justify-center">
             <Image 

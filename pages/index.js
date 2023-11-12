@@ -1,7 +1,7 @@
 import React from "react";
-import Head from 'next/head';
 import ListAlbum from "../components/ListAlbum";
 import ListArtists from "../components/ListArtists";
+import ListPopularArtists from "../components/ListpPopularArtists";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <div className='bg-spotify-gray rounded-lg'>
         <ListAlbum title="Recently played" />
         <ListArtists title="Your favorite artists" />
-        <ListAlbum title="Popular artists" />
+        <ListPopularArtists title="Popular artists" />
       </div>
     </div>
   )

@@ -8,11 +8,11 @@ import { RiPlayFill } from "react-icons/ri";
     return ( 
     <Link 
         href="/"  
-        className="bg-spotify-lightgray p-4 flex flex-col justify-center rounded-lg hover:bg-spotify-bghover transition-all group"
+        className="bg-spotify-lightgray p-3 pb-8 flex flex-col justify-center rounded-lg hover:bg-spotify-bghover transition-all group"
     >
         <div className="mb-4 relative max-sm:flex max-sm:items-center max-sm:justify-center sm:flex sm:justify-center md:flex md:items-center md:justify-center">
             <Image 
-                src="https://lastfm.freetls.fastly.net/i/u/500x500/7827f4cbfb514b5fcb1a096868650184.jpg"
+                src="https://lastfm.freetls.fastly.net/i/u/500x500/3daf9dc851c645e34845d4eec6050c07.jpg"
                 width={170}
                 height={170}
                 alt="album"
@@ -25,8 +25,8 @@ import { RiPlayFill } from "react-icons/ri";
             </button>
         </div>
         <div className="items-start">
-                <h5 className="text-md font-bold text-spotify-white mb-1">If I Lose Myself</h5>
-                <p className="text-sm font-semibold">OneRepublic, Alesso</p>
+                <h5 className="text-md font-bold text-spotify-white mb-1">Forever</h5>
+                <p className="text-sm font-semibold">Martin Garrix, Matisse</p>
         </div>
     </Link>
     )

@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import Artist_1 from "./CardsArtists/Artist_1";
-import Artist_2 from "./CardsArtists/Artist_2";
-import Artist_3 from "./CardsArtists/Artist_3";
-import Artist_4 from "./CardsArtists/Artist_4";
+import Popular_1 from "./PopularArtistsCards/Popular_1";
+import Popular_2 from "./PopularArtistsCards/Popular_2";
+import Popular_3 from "./PopularArtistsCards/Popular_3";
+import Popular_4 from "./PopularArtistsCards/Popular_4";
 
 
 
-const ListArtists = (props) => {
+const ListPopularArtists = (props) => {
 
     const {title, albums } = props;
 
@@ -31,13 +31,13 @@ const ListArtists = (props) => {
                 </Link>
             </div>
             <div className="grid grid-cols-1 px-6 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                <Artist_1/>
-                <Artist_2/>
-                <Artist_3/>
-                <Artist_4/>
+                <Popular_1/>
+                <Popular_2/>
+                <Popular_3/>
+                <Popular_4/>
             </div>
         </div>
     );
 }
 
-export default ListArtists;
+export default ListPopularArtists;
