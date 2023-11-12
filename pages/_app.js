@@ -15,7 +15,7 @@ function MyApp({Component, pageProps}) {
           <meta name='description' content='Generate by create next app'/>
           <link rel='icon' href='/'/>
       </Head>
-      <div className='bg-spotify-black min-h-screen text-gray-400'>
+      <div className='bg-spotify-black min-h-screen pt-2 text-gray-400'>
         <Header setShowSidebar={setShowSidebar} />
         <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
         <main>

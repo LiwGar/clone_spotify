@@ -13,8 +13,8 @@ const Sidebar = (props) => {
     const {showSidebar, setShowSidebar} = props;
 
   return (
-    <div className={`fixed w-[100%] h-full top-0 p-2 bg-spotify-black ${ showSidebar ? 'left-0' : '-left-full'} 
-        md:left-0 lg:left-0 md:w-[24%] lg:w-[34%] xl:w-[24%] transition-all duration-300`} alt="sidebar">
+    <div className={`fixed w-[100%] h-full top-0 bg-spotify-black ${ showSidebar ? 'left-0' : '-left-full'} 
+        max-sm:z-40 max-sm:p-2 sm:p-2 sm:z-40 md:left-0 md:w-[36%] lg:left-0 lg:w-[34.5%] xl:left-0 xl:w-[32%] transition-all duration-300`} alt="sidebar">
       <div className="bg-spotify-gray px-6 py-6 rounded-lg" alt="home">
         <div className="flex justify-between">
             <div>
@@ -51,25 +51,27 @@ const Sidebar = (props) => {
           </ul>
         </nav>
       </div>
-      <div className="bg-spotify-gray h-[67%] px-6 py-1 mt-2 font-bold rounded-lg"
+      <div className="bg-spotify-gray font-bold h-[72%] px-6 py-1 mt-2 md:px-4 xl:pr-5 rounded-lg"
             alt="your_Libray">
-        <div className="flex space-x-[12%] mt-3 xl:space-x-[12%]">
+        <div className="flex justify-between mt-3 xl:space-x-[10%]">
           <Link
             href={"#yourlibrary"}
-            className="flex w-full items-center gap-4 hover:text-white transition-colors">
+            className="flex items-center gap-4 md:w-full hover:text-white transition-colors">
             <TfiLayoutColumn4Alt className="w-5 h-5" /> Your Library
           </Link>
-          <button>
-            <HiPlus className="w-5 h-5 ml-12 hover:text-white transition-colors" />
-          </button>
-          <button>
-            <FiArrowRight className="w-6 h-6 -ml-5 hover:text-white transition-colors" />
-          </button>
+          <div className="flex justify-between gap-7">
+            <button>
+              <HiPlus className="w-5 h-5 ml-12 hover:text-white transition-colors" />
+            </button>
+            <button>
+              <FiArrowRight className="w-6 h-6 -ml-4  hover:text-white transition-colors" />
+            </button>
+          </div>
         </div>
-        <button className="bg-spotify-lightgray w-[25%] h-8 mt-6 -ml-2.5 rounded-2xl text-sm text-white  hover:bg-spotify-bghover transition-colors">
+        <button className="bg-spotify-lightgray text-sm text-white w-[25%] h-8 mt-6 -ml-2.5 rounded-2xl hover:bg-spotify-bghover transition-colors">
           Artists
         </button>
-        <div className="flex space-x-[67%] mt-4 md:space-x-[28%] xl:space-x-[60%]">
+        <div className="flex justify-between  mt-4 md:space-x-[28%] xl:space-x-[76%] xl:pr-5">
           <Link
             href={"#search-recents"}
             className="flex items-center gap-4 hover:text-white transition-colors"
@@ -78,7 +80,7 @@ const Sidebar = (props) => {
           </Link>
           <Link
             href={"#recents-list"}
-            className="flex  items-center gap-4 text-sm font-normal hover:text-white transition-colors"
+            className="flex items-end gap-4 text-sm font-normal hover:text-white transition-colors"
           >
             Recents <RiListCheck className="w-5 h-5" />
           </Link>
@@ -128,7 +130,7 @@ const Sidebar = (props) => {
             <li>
               <Link
                 href={"#martingarrix-list"}
-                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-spotify-bghover hover:rounded  transition-colors
+                className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-spotify-bghover hover:rounded transition-colors
                 snap-left">
                 <div className="w-12 h-12 rounded-full">
                   <Image
@@ -144,7 +146,7 @@ const Sidebar = (props) => {
                   <p className="text-sm text-gray-400">Artist</p>
                 </div>
               </Link>
-              {/* <Link
+              <Link
                 href={"#kygo-list"}
                 className="flex items-center gap-4 mt-1 px-2 py-2 hover:bg-stone-800 hover:rounded  transition-colors
                 snap-left">
@@ -161,7 +163,7 @@ const Sidebar = (props) => {
                   <span>Kygo</span>
                   <p className="text-sm text-gray-400">Artist</p>
                 </div>
-              </Link> */}
+              </Link>
             </li>
           </ul>
         </nav>
