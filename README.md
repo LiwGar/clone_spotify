@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [easybank_landing_page](https://liwgar.github.io/easybank_landing_page/)
+- Live Site URL: [spotify clone page](https://clone-spotify-gamma-nine.vercel.app/)
 
 ## My process
 
