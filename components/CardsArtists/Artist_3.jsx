@@ -12,7 +12,7 @@ import { RiPlayFill } from "react-icons/ri";
     >
         <div className="mb-4 relative max-sm:flex max-sm:items-center max-sm:justify-center sm:flex sm:justify-center md:flex md:items-center md:justify-center">
             <Image 
-                src="https://pbs.twimg.com/profile_images/1691376723848257537/gLhoDnxU_400x400.jpg"
+                src="https://pbs.twimg.com/profile_images/1729131801522630656/-FTZR5zr_400x400.jpg"
                 width={200}
                 height={200}
                 alt="artist"

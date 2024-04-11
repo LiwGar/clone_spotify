@@ -96,7 +96,7 @@ const Sidebar = (props) => {
                   <Image
                     width={60}
                     height={60}
-                    src="https://pbs.twimg.com/profile_images/1289180733202890752/rZAMGF8X_400x400.jpg"
+                    src="https://pbs.twimg.com/profile_images/1776287823311589382/fxk28i5V_400x400.jpg"
                     alt="martingarrix"
                     className="rounded-full"
                   />
@@ -136,7 +136,7 @@ const Sidebar = (props) => {
                   <Image
                     width={60}
                     height={60}
-                    src="https://pbs.twimg.com/profile_images/1691376723848257537/gLhoDnxU_400x400.jpg"
+                    src="https://pbs.twimg.com/profile_images/1729131801522630656/-FTZR5zr_400x400.jpg"
                     alt="martingarrix"
                     className="rounded-full"
                   />
@@ -154,7 +154,7 @@ const Sidebar = (props) => {
                   <Image
                     width={60}
                     height={60}
-                    src="https://pbs.twimg.com/profile_images/1602796997001580544/P45k0XxL_400x400.jpg"
+                    src="https://pbs.twimg.com/profile_images/1777724872820457472/Z3g1cR7b_400x400.jpg"
                     alt="martingarrix"
                     className="rounded-full"
                   />
